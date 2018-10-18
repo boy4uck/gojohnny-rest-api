@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: 'prod'
+    active: 'dev'
   jpa:
     properties:
       hibernate:
@@ -8,6 +8,7 @@ spring:
     database-platform: 'org.hibernate.spatial.dialect.postgis.PostgisDialect'
   flyway:
     enabled: true
+    baseline-on-migrate: true
 ---
 spring:
   profiles: 'dev'
