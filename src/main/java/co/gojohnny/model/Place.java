@@ -8,7 +8,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-import static javax.persistence.GenerationType.SEQUENCE;
+import static javax.persistence.GenerationType.*;
 
 @NoArgsConstructor
 @Getter
@@ -29,7 +29,7 @@ public class Place {
     @Column
     private BigDecimal altitude;
 
-    @Column(nullable = false, columnDefinition = "geometry")
+    @Column(nullable = false)
     private Point location;
 
     @Column(name = "photo_url")

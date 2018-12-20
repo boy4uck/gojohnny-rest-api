@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.0.5.RELEASE'
+        springBootVersion = '1.5.10.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -21,13 +21,6 @@ sourceCompatibility = 10
 
 repositories {
     mavenCentral()
-    maven {
-        url "http://download.osgeo.org/webdav/geotools/"
-    }
-
-    maven {
-        url "http://repo.boundlessgeo.com/main/"
-    }
 }
 
 
@@ -37,14 +30,6 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-rest')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.hibernate:hibernate-spatial:5.2.17.Final')
-    
-    compile('com.vividsolutions:jts:1.8')
-    compile('org.locationtech.jts:jts-core:1.15.0')
-    compile('org.orbisgis:h2gis:1.4.0')
-    compile('org.orbisgis:h2gis-ext:1.3.2')
-    compile('org.opengeo:geodb:0.9')
-
-
     compile('com.bedatadriven:jackson-datatype-jts:2.4')
     compile('org.flywaydb:flyway-core')
     compile('javax.xml.bind:jaxb-api:2.3.0')
