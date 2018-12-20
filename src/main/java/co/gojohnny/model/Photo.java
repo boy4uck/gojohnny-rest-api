@@ -27,4 +27,7 @@ public class Photo {
     private LocalDateTime creationTime;
 
     // TODO: User
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }
