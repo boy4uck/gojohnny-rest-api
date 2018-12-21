@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.10.RELEASE'
+        springBootVersion = '2.0.5.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -33,7 +33,7 @@ dependencies {
     compile('com.bedatadriven:jackson-datatype-jts:2.4')
     compile('org.flywaydb:flyway-core')
     compile('javax.xml.bind:jaxb-api:2.3.0')
-    runtime('com.h2database:h2')
+    runtime('com.h2database:h2:1.4.196')
     runtime('org.postgresql:postgresql')
     compileOnly('org.projectlombok:lombok:1.18.2')
     annotationProcessor('org.projectlombok:lombok:1.18.2')
