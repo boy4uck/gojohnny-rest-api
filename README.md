@@ -38,6 +38,13 @@ spring:
     password: 'postgres'
 ```
 * **don't commit any local changes** from [application.yml](https://github.com/bobocode-labs/gojohnny-rest-api/blob/master/src/main/resources/application.yml)
+
+* **if you need to run application locally without changing [application.yml](https://github.com/bobocode-labs/gojohnny-rest-api/blob/master/src/main/resources/application.yml), set active spring profile from "prod" to "dev" or "testing":**
+```
+open Edit Configurations in your IDEA and in Environment Variables set 
+name:"spring.profiles.active" and value: "dev" or "testing"
+```
+
 * if you are running project for first time (using empty database), you should **change flyway configuration**:
 ```
   flyway:
