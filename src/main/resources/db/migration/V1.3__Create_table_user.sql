@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS "user" (
+CREATE TABLE IF NOT EXISTS users (
   id              BIGINT NOT NULL,
   first_name      VARCHAR(255) NOT NULL,
   last_name       VARCHAR(255) NOT NULL,
@@ -6,6 +6,6 @@ CREATE TABLE IF NOT EXISTS "user" (
   password        VARCHAR(255) NOT NULL,
   creation_time   DATE         NOT NULL,
 
-  CONSTRAINT user_PK PRIMARY KEY (id),
-  CONSTRAINT user_email_AK UNIQUE (email)
+  CONSTRAINT users_PK PRIMARY KEY (id),
+  CONSTRAINT users_email_AK UNIQUE (email)
 );

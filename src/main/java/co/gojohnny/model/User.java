@@ -13,7 +13,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
 @Getter
 @Setter
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = SEQUENCE)
@@ -31,7 +31,7 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @Column(name = "creation_time",nullable = false)
+    @Column(name = "creation_time", nullable = false)
     private LocalDateTime creationTime = LocalDateTime.now();
 
 }
