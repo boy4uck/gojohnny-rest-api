@@ -24,7 +24,7 @@ public class Photo {
     private String url;
 
     @Column(name = "creation_time", nullable = false)
-    private LocalDateTime creationTime;
+    private LocalDateTime creationTime = LocalDateTime.now();
 
     @ManyToOne
     @JoinColumn(name = "user_id")
