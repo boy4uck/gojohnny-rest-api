@@ -39,6 +39,6 @@ public class Place {
     private Long osmId;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, columnDefinition = "UNKNOWN")
+    @Column(nullable = false, columnDefinition = "VARCHAR(255) DEFAULT 'UNKNOWN'")
     private PlaceType type;
 }
