@@ -37,4 +37,8 @@ public class Place {
 
     @Column(name = "osm_id")
     private Long osmId;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, columnDefinition = "VARCHAR(255) DEFAULT 'UNKNOWN'")
+    private PlaceType type;
 }
