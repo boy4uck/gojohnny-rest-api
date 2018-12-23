@@ -40,5 +40,5 @@ public class Place {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, columnDefinition = "VARCHAR(255) DEFAULT 'UNKNOWN'")
-    private PlaceType type;
+    private PlaceType type = PlaceType.UNKNOWN;
 }
