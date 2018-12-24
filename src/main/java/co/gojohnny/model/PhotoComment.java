@@ -27,7 +27,7 @@ public class PhotoComment {
     @Column(nullable = false)
     private String text;
 
-    @Column(name = "creation_time", nullable = false)
+    @Column(name = "creation_time", nullable = false, columnDefinition = "TIMESTAMP DEFAULT now()")
     private LocalDateTime creationTime = LocalDateTime.now();
 
     @ManyToOne(optional = false)
